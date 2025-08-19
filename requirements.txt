@@ -1,0 +1,17 @@
+⚙️ Requirements & Setup
+
+To view and interact with this project, you need:
+
+Power BI Desktop (Version: June 2023 or later) – Download Here
+
+Dataset files included in the repository (/datasets folder).
+
+Steps to Open:
+
+Clone or download this repository.
+
+Open the .pbix file in Power BI Desktop.
+
+If prompted, ensure the dataset path is correctly linked.
+
+Explore the dashboard using filters, slicers, and visuals.
