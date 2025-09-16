@@ -1,153 +1,192 @@
 # Zomato-Analysis
-An interactive Power BI dashboard analyzing global restaurant data. Provides insights on restaurant count, cuisines, ratings, and presence across countries, cities, and localities with KPIs, maps, and charts to support decision-making in the food industry.
 
-🍴 Restaurant Analysis Dashboard (Capstone Project)
-📌 Project Overview
 
-This capstone project focuses on building an interactive Restaurant Analysis Dashboard using Power BI.
-The dashboard provides valuable insights into restaurant data across multiple countries and helps understand customer preferences, restaurant availability, cuisines, and ratings.
+---
 
-The project is inspired by the Zomato dataset and demonstrates how data visualization can support decision-making in the food and hospitality industry.
+🍴 Restaurant Performance & Insights Dashboard
 
-🎯 Objectives
+An interactive Power BI dashboard analyzing global restaurant data.
+It provides insights on restaurant distribution, cuisines, ratings, and presence across countries, cities, and localities.
+The project helps decision-makers in the food & beverage industry identify trends, top cuisines, and areas for improvement 🌍🍲📊.
 
-Analyze restaurant distribution across countries, cities, and localities.
 
-Evaluate restaurant ratings and their distribution.
+---
 
-Identify popular cuisines and their quality perception.
+📌 1. Project Overview
 
-Provide insights into online delivery, table booking, and cost factors.
+This project focuses on building a Restaurant Analysis Dashboard using Power BI.
+It transforms raw restaurant data into actionable insights by visualizing:
 
-Create an interactive, user-friendly Power BI dashboard for data exploration.
+🌍 Restaurant presence across countries & cities
 
-📂 Dataset
+🍜 Cuisines diversity
 
-The dataset includes restaurant-related information with the following key columns:
+⭐ Customer ratings distribution
 
-Restaurant ID – Unique identifier for restaurants
+🚚 Service models (online delivery, table booking)
 
-Restaurant Name
 
-Country
 
-City
+---
 
-Locality
+❓ 2. Problem Statement
 
-Cuisines
+The analysis aims to answer:
 
-Aggregate Rating
+🏙 Which countries, cities & localities have the highest restaurant presence?
 
-Rating Text (Excellent, Very Good, Good, Average, Poor, Not Rated)
+🍲 What are the top cuisines, and how do they perform across regions?
 
-Rating Color
+⭐ How do ratings vary across cuisines & restaurants?
 
-Has Online Delivery
+📦 Which service models (online delivery, table booking) dominate?
 
-Has Table Booking
+📊 How can Zomato or restaurants use this to boost performance?
 
-Average Cost for Two
 
-🛠 Methodology
 
-Data Cleaning & Preparation
+---
 
-Removed duplicates and null values.
+📂 3. Dataset
 
-Standardized cuisine and locality names.
+Source: Zomato dataset (CSV/Excel)
 
-Created calculated columns and DAX measures for KPIs.
+Records: ~9,500+ restaurants 📑
 
-Data Modeling
+Fields:
+🏷 Restaurant ID | 🍽 Name | 🌍 Country | 🏙 City | 📍 Locality | 🍲 Cuisines | ⭐ Rating | 🎨 Rating Color | 🚚 Online Delivery | 📅 Table Booking | 💰 Avg. Cost for Two | 💱 Currency
 
-Linked multiple tables (Restaurant, Country, Cuisines).
+Preprocessing Steps:
+✅ Removed duplicates & null values
+✅ Standardized cost across currencies 💱
+✅ Derived calculated columns like Rating Text (Excellent, Very Good, Good, etc.)
 
-Applied relationships for filtering and drill-through analysis.
 
-Dashboard Design in Power BI
 
-Added slicers for dynamic filtering.
+---
 
-Created KPI cards for high-level metrics.
+🔄 4. Analysis Workflow
 
-Designed charts (donut, bar, and map visuals).
+⿡ Data Cleaning & Preparation 🧹
 
-Applied Zomato-style red & white theme.
+Removed duplicates, handled nulls, fixed data types
 
-📊 Dashboard Features
+Created columns: Rating Text, Service Availability
 
-KPIs
 
-Total Restaurants
+⿢ Transformation & Calculations (DAX) 🧮
 
-Distinct Cities (Presence in City)
+Measures:
+🍽 Restaurant Count
+🍜 Distinct Cuisines
+🏙 Presence in City/Locality
+⭐ Average Rating
 
-Distinct Cuisines Served
 
-Distinct Localities
+⿣ Exploratory Analysis 🔍
 
-Visuals
+Map 🌍 → Country-wise restaurant presence
 
-📍 Donut Chart: Restaurant Count by Rating
+Donut & Bar Charts 📊 → Rating distribution
 
-🍲 Bar Chart: Cuisines Count by Rating
+Cuisine vs Ratings analysis 🍲⭐
 
-🌍 Map: Restaurant Presence by Country
 
-📊 Bar Chart: Restaurant Count by Country
+⿤ Insights Derived 💡
 
-Filters
+Found countries with highest restaurant count
 
-Country
+Identified diverse cuisines served
 
-Average Cost for Two
+Rating trends (more “Good” than “Excellent”)
 
-Online Delivery Availability
 
-Table Booking Availability
 
-Cuisines
+---
 
-Aggregate Rating
+📊 5. Key Metrics & KPIs
 
-Rating Color
+🏢 Restaurant Count – Total restaurants
 
-💡 Key Insights
+🍲 Distinct Cuisines – Variety across countries
 
-India has the highest number of restaurants listed.
+📍 Presence in City/Locality – Market reach
 
-Most restaurants fall under "Good" and "Very Good" rating categories.
+⭐ Average Rating – Customer perception
 
-A significant number of cuisines are concentrated in a few countries.
+🚚📅 Service Availability – Online delivery & booking trends
 
-Availability of online delivery and table booking differs greatly across regions.
 
-🚀 Tools & Technologies
 
-Power BI – Dashboard creation and visualization
+---
 
-DAX (Data Analysis Expressions) – KPI calculations
+📈 6. Dashboards & Visuals
 
-Excel / CSV – Raw data source
+The dashboard includes:
 
-📌 Outcome
+📌 KPI Cards → Restaurant Count, Distinct Cuisines, Localities
 
-The final dashboard provides a comprehensive view of the restaurant ecosystem across multiple countries and helps stakeholders:
+🍩 Donut Chart → Distribution by Ratings
 
-Identify growth opportunities in under-represented regions.
+🌍 Map → Country-wise restaurant spread
 
-Track performance of restaurants by ratings and cuisines.
+📊 Bar Charts →
 
-Make informed decisions on cost, delivery, and booking services.
+Cuisines Count by Rating
+
+Restaurant Count by Country
+
+
+
+
+---
+
+💡 7. Results & Insights
+
+🇮🇳 India = highest restaurant count
+
+⭐ Most restaurants are rated “Good” or “Average”
+
+🌐 Few cuisines dominate (North Indian, Chinese)
+
+🏙 Untapped localities = expansion opportunities
+
+
+
+---
+
+🚀 8. Future Improvements
+
+📆 Add trend analysis of ratings over time
+
+💰 Compare average cost for two across regions
+
+🤖 Predictive modeling for success factors
+
+🔗 API integration for real-time updates
+
+
+
+---
+
+🖥 9. Usage Instructions
+
+⿡ Download the .pbix file from the repo  
+⿢ Open in Power BI Desktop  
+⿣ Check dataset (CSV/Excel) path is correct  
+⿤ Use slicers (Country, Cuisines, Ratings, etc.)  
+⿥ Explore Page 1 (Overview) & Page 2 (Detailed Insights)
+
+
+---
+
 
 📷 Dashboard Preview
 
 <img width="1292" height="741" alt="image" src="https://github.com/user-attachments/assets/34299fea-74bd-4874-9d5d-ea223eaebee7" />
 <img width="1327" height="747" alt="image" src="https://github.com/user-attachments/assets/1b3acd0a-c162-43a2-a631-1b02c61204f5" />
 
+---
 
-🏆 Conclusion
 
-This project showcases the power of data visualization in the F&B industry.
-By using Power BI, we successfully transformed raw restaurant data into actionable insights, enabling better strategic planning for businesses.
+
